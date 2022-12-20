@@ -32,7 +32,7 @@ default:
 switch (mp, hp) {
 case (15, 10):
     print("Great job")
-case (1...15, 20..<25):
+case (1...15, 8..<15):
     print("Ranges are the best!")
 case (let localMP, let localHP) where localMP + localHP > 20:
     print(localMP, localHP)

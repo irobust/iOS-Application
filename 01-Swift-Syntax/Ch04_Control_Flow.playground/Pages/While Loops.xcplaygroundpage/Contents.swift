@@ -14,7 +14,7 @@
 
  */
 // While loop
-var playerHealth = 5
+var playerHealth = 0
 
 //while playerHealth > 0 {
 //    playerHealth -= 1

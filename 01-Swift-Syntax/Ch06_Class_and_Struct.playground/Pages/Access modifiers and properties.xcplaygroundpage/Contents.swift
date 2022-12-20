@@ -63,5 +63,7 @@ var player2 = Adventurer(name: "Steven")
 Adventurer.credo
 Adventurer.maxActivePlayers
 
+player1.Health = 90
+
 player1.printStats()
 player2.printStats()

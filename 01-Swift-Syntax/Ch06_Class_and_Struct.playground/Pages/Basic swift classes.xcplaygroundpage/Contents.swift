@@ -38,9 +38,10 @@ class Adventurer {
 var player1 = Adventurer(name: "Harrison", maxHP: 99)
 var player2 = Adventurer(name: "Steven")
 var defaultPlayer = player1
-defaultPlayer.name = "Bob the Noob"
 player1.name = "Harrison"
+defaultPlayer.name = "Bob the Noob"
 
+defaultPlayer.printStats()
 player1.printStats()
 player2.printStats()
 

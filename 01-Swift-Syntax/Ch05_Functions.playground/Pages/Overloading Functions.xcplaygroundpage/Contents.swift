@@ -14,11 +14,13 @@
 
  */
 // Base function
+// () -> Void
 func attackEnemy() {
     print("Executing default attack...")
 }
 
 // Overloaded functions
+// (Int) -> Void
 func attackEnemy(damage: Int) {
     print("Attacking for \(damage)")
 }

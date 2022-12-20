@@ -15,8 +15,8 @@
  
  */
 // Declaring an enum
-enum GameState {
-    case Completed
+enum GameState: Int {
+    case Completed = 1
     case Initializing
     case LoadingData
     case Restarting
@@ -25,8 +25,8 @@ enum GameState {
 //enum GameState { case Completed, Initializing, LoadingData }
 
 // Storing and switching on an enum value
-var currentState = GameState.Completed
-print("Current state is \(currentState)")
+var currentState = GameState.Initializing
+print("Current state is \(currentState.rawValue)")
 
 switch currentState {
 case .Completed:

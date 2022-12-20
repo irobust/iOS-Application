@@ -33,6 +33,8 @@ func loadData(path: String) throws -> Bool? {
 }
 
 // Do-Catch statements
+try? loadData(path: playerDataPath)
+
 do {
     try loadData(path: playerDataPath)
     print("Data fetch successful!")
@@ -44,6 +46,8 @@ do {
 
 if let dataLoaded = try? loadData(path: playerDataPath) {
     print("Data fetch went just fine...")
+}else{
+    print("Invalid path!")
 }
 
 // Propagating errors

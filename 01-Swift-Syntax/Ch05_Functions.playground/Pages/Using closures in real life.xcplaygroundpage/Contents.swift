@@ -31,6 +31,7 @@ func activeMembers(completion: ([String]) -> Void) {
     completion(partyMembers)
 }
 
+
 activeMembers { (members) in
     for name in members {
         print("\(name) is active!")
@@ -38,7 +39,7 @@ activeMembers { (members) in
 }
 
 func activeMembers(members: [String]) -> () -> Void {
-    let completion: () -> Void = {
+    let completion = {
         for name in members {
             print("\(name) is present!")
         }

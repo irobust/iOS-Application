@@ -15,7 +15,7 @@
  */
 // Optional return value
 func setupArenaMatch() -> Bool? {
-    return nil
+    return true
 }
 
 if let initSuccess = setupArenaMatch() {

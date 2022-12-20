@@ -14,11 +14,24 @@
 
  */
 // Defining closures
-var closure: () -> () = {}
+var closure: () -> () = {
+    print("hello closure")
+}
 
 // Initializing closures
-var computeBonusDamage = { base in
+var computeBonusDamage: (Int) -> Int = { base in
     return base * 4
 }
 
 computeBonusDamage(25)
+
+
+func hello(greeting:() -> Void){
+    // ....
+    greeting()
+    // ....
+}
+
+hello(){
+    print("Hello")
+}

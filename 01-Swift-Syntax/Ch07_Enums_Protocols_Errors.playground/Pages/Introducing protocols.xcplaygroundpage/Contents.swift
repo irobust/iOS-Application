@@ -23,6 +23,30 @@ protocol Collectable {
     func collect() -> Bool
 }
 
+protocol Usable {
+    func use()
+}
+
+class BasicItem: Collectable, Usable{
+    var name: String
+    var price: Int
+    
+    required init(withName: String, startingPrice: Int){
+        self.name = withName
+        self.price = startingPrice
+    }
+    
+    func collect() -> Bool{
+        return true
+    }
+    
+    func use(){
+        print("Using this item")
+    }
+}
+
+
+
 extension Collectable {
     var priceIncrease: Int {
         return self.price * 10
@@ -38,9 +62,6 @@ extension Collectable {
     }
 }
 
-protocol Usable {
-    func use()
-}
 
 // Protocol adoption
 class Item: Collectable, Usable {
@@ -68,6 +89,7 @@ potion.use()
 
 let antidote = Item(name: "Antidote")
 antidote.price
+antidote.priceIncrease
 
 extension String {
     func fancyDebug() {
